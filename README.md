@@ -68,6 +68,8 @@ sample_data/support/glossary.csv                  LNG 용어집 8행
 8. [`resources/agent_bricks_demo_plan.md`](resources/agent_bricks_demo_plan.md)에 따라 Knowledge Assistant, AI Search 용어집, Supervisor를 구성합니다.
 9. `resources/app.yaml.example`과 `resources/app_resource_binding.example.yml`을 기준으로 간단한 Databricks App을 연결합니다.
 
+App 소스 예제는 `app/app.py`, `app/app.yaml`, `app/requirements.txt`에 있습니다. Streamlit 화면에서 Supervisor endpoint에 질문을 보내고, Supervisor가 Genie Agent·Knowledge Assistant·AI Search를 선택해 답변하도록 구성합니다.
+
 ## Knowledge Assistant PDF
 
 ```text

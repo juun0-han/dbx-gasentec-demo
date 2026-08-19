@@ -9,24 +9,34 @@ issu_dip_wksp.gasentec_hands_on.lng_operations_metrics
 ## 기본 생성 프롬프트
 
 ```text
-Using the metric view issu_dip_wksp.gasentec_hands_on.lng_operations_metrics, create an AI/BI dashboard named "LNG Terminal Operations Overview".
+`issu_dip_wksp.gasentec_hands_on.lng_operations_metrics` Metric View를 사용해 "GasEntec LNG Terminal Operations Overview"라는 이름의 AI/BI 대시보드를 만들어줘.
 
-Audience: LNG terminal operations and O&M reviewers.
+대상 사용자는 LNG 터미널 운영 및 O&M 검토 담당자야. 이 데이터는 실제 운영 데이터가 아닌 합성 데모 데이터라는 점을 대시보드 설명에 표시해줘.
 
-Add four KPI cards:
-1. Total send-out (mmscfd)
-2. Average uptime (%).
-3. Average BOG rate (%).
-4. Total maintenance cost (USD).
+다음 KPI 카드를 추가해줘.
 
-Add these visualizations:
-1. A monthly line chart of total send-out by operation_month.
-2. A ranked bar chart of average uptime by site_name.
-3. A bar chart of total downtime and total maintenance cost by asset_category.
-4. A scatter chart of average BOG rate versus average uptime by site_name.
-5. A table of ALARM records and incident count by site_name and asset_name.
+1. 총 송출량: mmscfd 단위의 total_sendout_mmscfd 측정값
+2. 평균 가동률: % 단위의 average_uptime_pct 측정값
+3. 평균 BOG 비율: % 단위의 average_boiloff_rate_pct 측정값
+4. 총 유지보수 비용: USD 단위의 total_maintenance_cost_usd 측정값
 
-Add filters for operation_month, region, terminal_type, asset_category, and maintenance_type. Use the Metric View measures with MEASURE() and keep units visible in titles. Mark this as synthetic demonstration data in the dashboard description.
+다음 시각화를 추가해줘.
+
+1. operation_month별 총 송출량 월별 추이 선 그래프
+2. site_name별 평균 가동률 내림차순 순위 막대 그래프
+3. asset_category별 총 다운타임과 총 유지보수 비용 비교 그래프
+4. site_name별 평균 BOG 비율과 평균 가동률 산점도
+5. site_name과 asset_name별 ALARM 기록 수와 사고 건수 표
+
+다음 필터를 대시보드 전체에 추가해줘.
+
+- operation_month
+- region
+- terminal_type
+- asset_category
+- maintenance_type
+
+원본 컬럼을 다시 집계하지 말고 Metric View에 정의된 측정값을 사용해줘. 차트 제목에 mmscfd, %, USD, 시간 단위를 표시해줘. 월별 차트는 operation_month를 시간순으로 정렬해줘.
 ```
 
 ## 운영 검토 대시보드 프롬프트
