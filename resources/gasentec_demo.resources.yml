@@ -1,0 +1,34 @@
+resources:
+  pipelines:
+    gasentec_lng_demo_pipeline:
+      name: gasentec_lng_demo_pipeline
+      catalog: ${var.catalog}
+      schema: ${var.schema}
+      serverless: true
+      edition: ADVANCED
+      channel: CURRENT
+      libraries:
+        - notebook:
+            path: ../notebooks/01_lng_demo_pipeline.sql
+      event_log:
+        name: gasentec_lng_demo_pipeline_event_log
+        catalog: ${var.catalog}
+        schema: ${var.schema}
+
+  jobs:
+    gasentec_lng_demo_refresh_job:
+      name: gasentec_lng_demo_refresh_job
+      max_concurrent_runs: 1
+      tasks:
+        - task_key: run_medallion_pipeline
+          pipeline_task:
+            pipeline_id: ${resources.pipelines.gasentec_lng_demo_pipeline.id}
+            full_refresh: false
+
+        - task_key: validate_pipeline
+          depends_on:
+            - task_key: run_medallion_pipeline
+          sql_task:
+            warehouse_id: ${var.warehouse_id}
+            file:
+              path: ../resources/sql/validate_pipeline.sql

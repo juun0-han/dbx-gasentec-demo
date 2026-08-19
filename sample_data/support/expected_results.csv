@@ -1,0 +1,8 @@
+metric,expected_value,validation_sql
+total_operation_records,300,SELECT COUNT(*) FROM issu_dip_wksp.gasentec_hands_on.gold_lng_operations
+total_sites,4,see metric view query
+total_assets,12,see metric view query
+total_sendout_mmscfd,100296.88,see metric view query
+average_uptime_pct,97.21,see metric view query
+total_maintenance_cost_usd,812102.21,see metric view query
+alarm_operation_count,7,see metric view query

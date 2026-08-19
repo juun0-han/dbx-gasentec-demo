@@ -1,0 +1,9 @@
+﻿term_id,term,definition,preferred_usage,aliases,example_question,metric_or_field,resolution_rule,search_text
+T001,LNG,액화천연가스. 천연가스를 극저온에서 액화해 저장·운송하는 연료,LNG,액화천연가스|liquefied natural gas,터미널별 LNG 운영 현황을 보여줘,액화천연가스,용어 정의를 우선 사용,LNG 액화천연가스. 천연가스를 극저온에서 액화해 저장·운송하는 연료 LNG 액화천연가스|liquefied natural gas 터미널별 LNG 운영 현황을 보여줘
+T002,Regasification,액화 상태의 LNG를 기화해 천연가스로 전환하는 공정,재기화,regas|기화,재기화 설비의 가동률은 얼마야?,재기화,기화·재기화는 Regasification으로 통일,Regasification 액화 상태의 LNG를 기화해 천연가스로 전환하는 공정 재기화 regas|기화 재기화 설비의 가동률은 얼마야?
+T003,BOG,저장·이송 중 자연 기화되는 LNG 증발가스(Boil-Off Gas),BOG,증발가스|boil off gas,BOG 비율이 가장 높은 설비는?,평균 BOG 비율,BOG rate가 낮을수록 일반적으로 양호,BOG 저장·이송 중 자연 기화되는 LNG 증발가스(Boil-Off Gas) BOG 증발가스|boil off gas BOG 비율이 가장 높은 설비는?
+T004,FSRU,LNG를 저장하고 재기화하는 부유식 저장·재기화 설비,FSRU,부유식 저장 재기화 설비,부유식 터미널과 육상 터미널을 비교해줘,부유식 저장·재기화 설비,FRU·FSU와 혼동하면 기능을 확인,FSRU LNG를 저장하고 재기화하는 부유식 저장·재기화 설비 FSRU 부유식 저장 재기화 설비 부유식 터미널과 육상 터미널을 비교해줘
+T005,Send-out,터미널에서 기화 후 외부로 공급하는 천연가스 유량,send-out,공급량|송출량,월별 send-out 추이를 보여줘,총 send-out,송출량·공급량은 total_sendout_mmscfd,Send-out 터미널에서 기화 후 외부로 공급하는 천연가스 유량 send-out 공급량|송출량 월별 send-out 추이를 보여줘
+T006,Preventive maintenance,고장 전에 계획적으로 수행하는 예방정비,예방정비,PM|planned maintenance,예방정비 비중을 계산해줘,예방정비,maintenance_type = PREVENTIVE,Preventive maintenance 고장 전에 계획적으로 수행하는 예방정비 예방정비 PM|planned maintenance 예방정비 비중을 계산해줘
+T007,Corrective maintenance,고장이나 이상 발생 후 복구를 위해 수행하는 교정정비,교정정비,CM|breakdown maintenance,교정정비 비용이 높은 사이트는?,교정정비,maintenance_type = CORRECTIVE,Corrective maintenance 고장이나 이상 발생 후 복구를 위해 수행하는 교정정비 교정정비 CM|breakdown maintenance 교정정비 비용이 높은 사이트는?
+T008,O&M,터미널과 설비의 운영 및 유지보수(Operation & Maintenance),O&M,운영유지보수|운영 및 유지보수,O&M 비용을 설비 유형별로 나눠줘,운영 및 유지보수,운영·정비 비용과 다운타임을 함께 확인,O&M 터미널과 설비의 운영 및 유지보수(Operation & Maintenance) O&M 운영유지보수|운영 및 유지보수 O&M 비용을 설비 유형별로 나눠줘

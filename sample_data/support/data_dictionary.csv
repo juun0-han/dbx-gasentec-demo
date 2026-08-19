@@ -1,0 +1,7 @@
+﻿layer,table_name,column_name,data_type,definition
+bronze,bronze_operations,sendout_mmscfd,STRING,원본 송출량(mmscfd)
+silver,silver_operations_clean,uptime_pct,DOUBLE,0~100 범위의 가동률
+gold,gold_lng_operations,sendout_mmscfd,DOUBLE,분석용 송출량 원천 컬럼. Metric View에서 total_sendout_mmscfd로 합산
+gold,gold_lng_operations,boiloff_rate_pct,DOUBLE,BOG 비율(%)
+gold,gold_lng_operations,maintenance_cost_usd,DOUBLE,유지보수 비용(USD)
+gold,gold_lng_operations,incident_count,INT,운영 기록에 연결된 사고 건수

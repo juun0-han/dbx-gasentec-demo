@@ -1,0 +1,7 @@
+﻿benchmark_id,question,expected_metric,expected_group_by,acceptance_rule
+B001,전체 기간의 총 send-out은 얼마야?,total_sendout_mmscfd,none,single total returned
+B001,터미널별 평균 가동률을 비교해줘,average_uptime_pct,site_name,four sites ranked descending
+B001,월별 send-out 추이를 보여줘,total_sendout_mmscfd,operation_month,chronological monthly series
+B001,설비 유형별 다운타임과 유지보수 비용을 비교해줘,"total_downtime_hours,total_maintenance_cost_usd",asset_category,both measures returned
+B001,BOG 비율이 높은 상위 3개 설비를 보여줘,average_boiloff_rate_pct,asset_name,top three assets returned
+B001,ALARM 상태 기록과 사고 건수를 알려줘,"alarm_operation_count,incident_count",none,safety counts returned

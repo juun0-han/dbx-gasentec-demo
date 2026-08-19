@@ -1,0 +1,5 @@
+resources:
+  apps:
+    gasentec_supervisor_app:
+      name: gasentec-supervisor-app
+      description: Synthetic GasEntec LNG Genie and AI Search supervisor demo

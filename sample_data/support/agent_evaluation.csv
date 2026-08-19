@@ -1,0 +1,5 @@
+﻿case_id,question,expected_route,expected_behavior,score
+A001,터미널별 평균 가동률을 비교해줘,genie_agent,metric view query and ranked table,1
+A002,BOG가 뭐야?,ai_search,glossary definition and alias,1
+A003,월별 send-out 추이를 대시보드로 만들어줘,genie_agent,AI/BI dashboard specification,1
+A004,성능이 좋은 터미널을 알려줘,supervisor_clarify,ask which performance metric,1

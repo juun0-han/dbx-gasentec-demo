@@ -1,0 +1,5 @@
+﻿site_id,site_name,country,region,terminal_type,commissioned_date,design_sendout_mmscfd,site_status
+S001,Philippines Hybrid Terminal (Demo),Philippines,Asia,HYBRID,2021-06-01,500,ACTIVE
+S002,Bali Small-Scale FRU (Demo),Indonesia,Asia,FLOATING,2020-09-15,120,ACTIVE
+S003,Aqaba Onshore Terminal (Demo),Jordan,Middle East,ONSHORE,2024-11-01,720,ACTIVE
+S004,Dakar Jetty Regas Unit (Demo),Senegal,Africa,JETTY,2025-04-01,300,ACTIVE

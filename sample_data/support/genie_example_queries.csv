@@ -1,0 +1,9 @@
+example_id,category,question,sql_answer,teaching_point
+E001,기본,전체 기간의 총 send-out은 얼마야?,SELECT MEASURE(total_sendout_mmscfd) AS total_sendout_mmscfd FROM issu_dip_wksp.gasentec_hands_on.lng_operations_metrics,기본 합계 측정값
+E002,기본,터미널별 평균 가동률을 비교해줘,"SELECT site_name, MEASURE(average_uptime_pct) AS average_uptime_pct FROM issu_dip_wksp.gasentec_hands_on.lng_operations_metrics GROUP BY site_name ORDER BY average_uptime_pct DESC",사이트 차원과 평균 측정값
+E003,분석,월별 send-out 추이를 보여줘,"SELECT operation_month, MEASURE(total_sendout_mmscfd) AS total_sendout_mmscfd FROM issu_dip_wksp.gasentec_hands_on.lng_operations_metrics GROUP BY operation_month ORDER BY operation_month",시간 차원 추이
+E004,분석,설비 유형별 다운타임과 유지보수 비용을 비교해줘,"SELECT asset_category, MEASURE(total_downtime_hours) AS total_downtime_hours, MEASURE(total_maintenance_cost_usd) AS total_maintenance_cost_usd FROM issu_dip_wksp.gasentec_hands_on.lng_operations_metrics GROUP BY asset_category ORDER BY total_downtime_hours DESC",복수 측정값 비교
+E005,분석,BOG 비율이 높은 상위 3개 설비를 보여줘,"SELECT asset_name, MEASURE(average_boiloff_rate_pct) AS average_boiloff_rate_pct FROM issu_dip_wksp.gasentec_hands_on.lng_operations_metrics GROUP BY asset_name ORDER BY average_boiloff_rate_pct DESC LIMIT 3",평균값과 상위 N
+E006,운영,교정정비 비용이 가장 높은 터미널은 어디야?,"SELECT site_name, MEASURE(corrective_maintenance_cost_usd) AS corrective_maintenance_cost_usd FROM issu_dip_wksp.gasentec_hands_on.lng_operations_metrics GROUP BY site_name ORDER BY corrective_maintenance_cost_usd DESC LIMIT 1",조건부 합계
+E007,안전,ALARM 상태 기록과 사고 건수를 알려줘,"SELECT MEASURE(alarm_operation_count) AS alarm_operation_count, MEASURE(incident_count) AS incident_count FROM issu_dip_wksp.gasentec_hands_on.lng_operations_metrics",운영 안전 지표
+E008,되묻기,성능이 좋은 터미널을 알려줘,"Clarify whether performance means send-out, uptime, boil-off rate, downtime, or maintenance cost before querying.",다의어 질문은 기준을 먼저 확인
