@@ -2,9 +2,8 @@ command: ["streamlit", "run", "app.py"]
 
 env:
   - name: SUPERVISOR_AGENT_ENDPOINT
-    value: "supervisor-agent-2026-08-19-15-33-08"
+    valueFrom: serving-endpoint
   - name: GENIE_SPACE_NAME
     value: "GasEnTec LNG Operations Genie"
   - name: AI_SEARCH_INDEX
     value: "issu_dip_wksp.gasentec_hands_on.gasentec_lng_glossary_index"
-
